@@ -2,23 +2,26 @@
 
 *{
     margin: 0;
-    
     padding:0 ;
 }
 
 
 /* full header section e duita img set kora lagbe */
-header{
-    
-    background: rgb(255, 248, 243);
-
-    background-image: url("../images/developer.png") , url("../images/header_bg.png");
+header{ 
+    background: rgb(252, 240, 231);
+    background-image: url("../images/header_bg.png") ;
+     /* url("../images/header_bg.png"); */
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
-  
+    background-position: bottom right;  
 }
 
-/* shared section for header */
+header{
+    
+    background-image: url("../images/developer.png");
+    background-position:  30px ;
+}
+
+/*----------------------- shared section for header ----------------- */
 /* used in about  */
 .shared-section-title{
     color: rgb(24, 24, 24);
@@ -46,17 +49,16 @@ header{
     background: rgb(255, 248, 243);
 }
 
-/* -------------------------------------------------------- */
+/* --------------------- nav --------------------- */
 nav{
     display: flex;
     align-items: center; 
       /*  align-items: center;     mane y axis e center */
     justify-content: space-between;
     /*  justify-content: space-between;  x axis e dui mathay falay */
-    margin: 0 80px;
-
-  
+    margin: 0 80px; 
 }
+
 
 /* Mary   text er code */
 .nav-title{
@@ -65,8 +67,10 @@ nav{
     font-weight: 800;
     line-height: 61px;
     letter-spacing: 0%;
-    margin-left: 132px;
+    margin-left: 125px;
 }
+
+
 
 /* MARY  er R  ke color korar code */
 .mary{
@@ -118,6 +122,8 @@ nav ul li a{
     font-size: 20px;
     font-weight: 700;
     line-height: 27px; 
+    margin-top: 20px;
+    margin-right:30px ;
 }
 .btn a{
     color: rgb(255, 255, 255);
@@ -178,18 +184,21 @@ nav ul li a{
 }
 
 .banner-img{
-    margin: 25px;
-    width: 585px;
+    background-position: bottom right;
+    margin: -4px;
+    /* width: 585px; */
     /* height: 676px; */
+   
 }
 
 
-/*                             About section                   */
+/* -------------- About section   -------------  */
 
 main{
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 .about{
    
@@ -199,8 +208,6 @@ main{
     text-align: center;
     margin-top: 130px;
     margin-bottom: 130px;
-    
-
 }
 
 .about-items{
@@ -230,4 +237,340 @@ main{
     line-height: 30px;
     letter-spacing: 0%;
     text-align: center;
+}
+
+
+/*  ---------- SKILL   SECTION------------ */
+/* skill er P */
+.skills-description{
+    color: rgb(117, 117, 117);
+font-family: Open Sans;
+font-size: 17px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+
+
+}
+
+
+/* every card ke pasapasi ana */
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    gap: 40px;
+
+    
+
+}
+
+/* every card ke border na diye shadow deoa */
+.skill{
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.121);
+    background: rgb(255, 255, 255);
+    /* margin: 3px; */
+    padding: 33px; 
+}
+
+
+.skill-title{
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top:28px ;
+    margin-bottom: 20px;
+}
+
+/* -----------    ---------------- */
+.skill-description{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+/* --------------     My Resume  ----------- */
+
+.resume .shared-section-title{
+    margin-top: 130px;
+    margin-bottom: 113px;
+}
+
+/* education and experience ke pasapasi anate code */
+.resume-card{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    margin-bottom: 50px;
+
+}
+/*  education er text gular css code */
+.edu-head {
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+.msc-title{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.msc-subtitle{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 10px;
+}
+
+.msc-description{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 30px;
+}
+
+/* experience er code */
+.ex-title{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.ex-subtitle{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 10px;
+}
+
+.ex-description{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 30px;
+}
+
+
+hr{
+    /* Dark 05 */
+border: 1px solid rgb(209, 209, 209);
+}
+
+
+/* education & experience er maje gap deoar jonno */
+.resume-card{
+    gap: 70px;
+}
+
+
+/* resume er btn ke maje ante code */
+.resume-btn{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+/* -------------- footer part css code--------- */
+
+
+.footer{
+
+    background: rgb(255, 248, 243);;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    gap: 50px;
+    
+    padding: 130px 230px 130px 240px;
+}
+
+.footer-content{
+    display: flex;
+    justify-self: left;
+}
+
+.connect-title, .message-title{
+    text-align: left;
+}
+
+.connect-description{
+    text-align: left;
+}
+
+
+.connect-icon img{
+    margin-top: 28px;
+    margin-right: 27px;
+    margin-left: -7px;
+    
+    
+    
+}
+
+
+
+/*     --  form --            */
+
+footer input[type="text"]{
+    width: 461px;
+     height: 64px;
+    border-radius: 5px;
+    height: 64px;
+
+    background: rgb(255, 255, 255);
+
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    border: none;
+}
+
+footer input[type="email"]{
+    width: 461px;
+    height: 64px;
+
+    border: none;
+
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    border-radius: 5px;
+    height: 64px;
+/* White Color */
+    background: rgb(255, 255, 255);
+    margin-bottom: 28px;
+
+}
+footer textarea{
+
+    border-radius: 5px;
+    height: 180px;
+/* White Color */
+    background: rgb(255, 255, 255);
+    margin-bottom: 28px;
+
+
+    width: 461px;
+    height: 180px;
+
+    border: none;
+
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+}
+
+footer input::placeholder{
+ 
+color: rgb(117, 117, 117);
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+
+footer textarea::placeholder{
+    color: rgb(117, 117, 117);
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.footer-btn{
+
+    /* button er text er code */
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    /* btn er text er background er code */
+    border-radius: 5px;
+    background: rgb(253, 110, 10);
+
+/*  btn ke from er sathe ek line e anar jonno & vitore  */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 28px; */
+    margin-bottom: 50px;
+    padding: 18px 39px;
+    border: none;
+
 }

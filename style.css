@@ -9,16 +9,18 @@
 /* full header section e duita img set kora lagbe */
 header{ 
     background: rgb(252, 240, 231);
-    background-image: url("images/header_bg.png") ;
-     /* url("../images/header_bg.png"); */
+    background-image: url("images/header_bg.png"),
+     url("/images/developer.png"); 
+     /* background-size:; */
     background-repeat: no-repeat;
-    background-position: bottom right;  
+    background-position: bottom right , center left ;  
 }
 
 header{
     
     background-image: url("images/developer.png");
     background-position:  30px ;
+    
 }
 
 /*----------------------- shared section for header ----------------- */
@@ -573,4 +575,104 @@ text-align: left;
     padding: 18px 39px;
     border: none;
 
+}
+
+
+
+
+
+/* TRYING TO MAKING THEM RESPONSIVE  */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+
+/*   ----  skills part  -------- */
+    .skills-container{
+        /* display: flex; */
+        flex-direction: column;
+        padding: 25px;
+    }
+
+
+/*    -----   Resume card  ------- */
+    .resume-card{
+        flex-direction: column;
+        padding: 25px;
+    }
+
+/*   ----  Footer   ----          */
+    .footer{
+        flex-direction: column;
+        padding: 20px;
+        padding-left: 50px;
+        margin: auto;
+        
+    }
+    .footer-message{
+        padding: 0;
+        width: 80%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    
+/* --- About ---- */
+    .about {
+        margin: 0;
+        padding: 10px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        margin-top: 50px; 
+        /* width: 100%; */
+    }
+    .about-items{
+        flex-direction: column;
+    }
+
+
+/*   -------  Banner   ---- */
+
+    .banner{
+        padding: 0;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    header{
+        /* background-position: ; */
+        background-image: none;
+    }
+    .banner-img img{
+        margin-top: 120px;
+        width: 100%;
+    }
+   /* ----Nav bar --- */
+    nav{
+        flex-direction: column;
+    }
+    .nav-right{
+        /* width: 100%; */
+        gap: 70px;
+    }
+    .nav-right > li{
+        /* padding: 10px; */
+        margin: 10px;
+        
+    }
+    
+    .btn{
+        padding: 10px;
+        /* width: 50%; */
+        font-size: medium;
+    }
+    nav > ul>li>a{
+        text-align:right;
+        font-size: small;
+    }
+    .nav-title{
+        padding: 0;
+        margin: 0;
+    }
 }
